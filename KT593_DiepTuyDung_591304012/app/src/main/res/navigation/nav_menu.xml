@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/dau">
+
+    <fragment
+        android:id="@+id/dau"
+        android:name="vn.edu.ntu.kt593_dieptuydung_59130401.dau"
+        android:label="fragment_dau"
+        tools:layout="@layout/fragment_dau" >
+        <action
+            android:id="@+id/action_dau_to_cuoi"
+            app:destination="@id/cuoi" />
+    </fragment>
+    <fragment
+        android:id="@+id/cuoi"
+        android:name="vn.edu.ntu.kt593_dieptuydung_59130401.cuoi"
+        android:label="fragment_cuoi"
+        tools:layout="@layout/fragment_cuoi" >
+        <action
+            android:id="@+id/action_cuoi_to_dau"
+            app:destination="@id/dau" />
+    </fragment>
+</navigation>
